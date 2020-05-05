@@ -30,3 +30,24 @@ x <- tweets.company$followers_count
 
 
 #3/Calculate the average followers_count ( save as xbar) and the average friends_count (save as. ybar) of your sample
+
+#8.3 Building networks
+user = lookup_users(c("bethesda")) #examine all of the details for Bethesda
+names(user)
+user$screen_name
+
+user$friends_count
+user$followers_count
+
+t <- get_friends("bethesda") #gets user id of friends of Bethesda
+names(t)
+#Question24: Find the 10 most popular friends of Bethesda
+friends = lookup_users(t$user_id)
+
+friendPosition = order(friends$followers_count, decreasing = TRUE)[1:10] 
+friendPosition
+
+topFriends = friends[friendPosition,] #ids of top 10 friends
+topFriends
+topFriends$screen_name
+#Result ques24: "jimmyfallon"     "PlayStation"     "SHAQ"            "Xbox"            "markiplier"      "RockstarGames"  "NintendoAmerica" "IGN"             "Twitch"          "EA"  
