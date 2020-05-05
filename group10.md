@@ -47,7 +47,7 @@ py_hat
 
 #5 
 
-#follers count
+#follwers count
 sample.x = sample(x,1000, replace = TRUE)
 sample.x
 hist(sample.x)
