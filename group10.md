@@ -296,7 +296,7 @@ In weightTfIdf(tweet.dtm) :
    #Question 17 :Comment on your visualization.
 
 
-   The cluster visualization shows that most of the tweets are at the far bottom centre on the x-axis  between -0.1 and 0.1 with  few of the yellow ,black  and    light blue at the outliers clustered separately . 
+   The cluster visualization shows that most of the tweets are at the far bottom centre on the x-axis  between -0.1 and 0.1 with  few of the yellow ,black  and    light blue at the outliers clustered separately .
 
 
 
